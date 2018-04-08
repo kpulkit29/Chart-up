@@ -1,0 +1,21 @@
+table{
+    display:block;
+    margin:auto;
+    text-align: center;
+}
+td{
+    margin:50px;
+}
+.headings{
+    font-weight: bold;
+}
+canvas{
+    width:50%;
+    height:auto;
+}
+.curr{
+    display:inline-block;
+    width:48%;
+    text-align: center;
+    align-items: center;
+}

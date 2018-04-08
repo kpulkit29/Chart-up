@@ -1,0 +1,43 @@
+<html ng-app="app">
+    <head>
+        
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body ng-controller="control1">
+    <h1 style="text-align:center;padding:10px;"><span style="color:red">Live!</span> Crypto Update</h1>
+    <div class="curr">
+        <div  style="margin:auto;display:block;width:200px;">
+                <md-switch ng-model="eth" ng-change="switch('eth')">
+                        Ethereum
+                      </md-switch>
+        </div>
+      
+    </div>
+    <div class="curr">
+            <div  style="margin:auto;display:block;width:200px;">
+                    <md-switch ng-model="btc" ng-change="switch('btc')">
+                            Bitcoin
+                          </md-switch>
+            </div>
+    </div>
+    <div id="chart" ng-show="btc"></div>
+    <div id="chart2" ng-show="eth"></div>
+    <!--- scripts  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+    
+    <script src="cc-utility.js"></script>
+    <script src="controllers/control.js"></script>
+    </body>
+</html>
